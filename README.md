@@ -3,7 +3,7 @@
 
 
 관람객 평점 을 통한 감독/ 배우의 스타성과 장르및 기타 요소들을 이용하여
-ML을 통한 흥행요소 예측 (진행중)
+ML을 통한 흥행요소 예측을 통한 스크린 
 
 ## 작동환경
 * OS : Windows 10
@@ -67,13 +67,43 @@ ML을 통한 흥행요소 예측 (진행중)
  * Random Forest의 경우 과적합이 일어나는 경우가 많고 가중요소의 다양성이 떨어지는 문제점이 발생함
  * Decision Tree의 경우 과적합이 일어나는 경우가 적고 가중요소의 다양성이 늘어남
  
+ #### 이미지 결과
+ ---
+ * Decision TreeClassifier
+ <div>
+  <img width="200" src="https://user-images.githubusercontent.com/22620301/80441614-3b126a00-8946-11ea-8248-30d27192d326.png">
+  <img width="200" src="https://user-images.githubusercontent.com/22620301/80441620-3cdc2d80-8946-11ea-9e19-68cd20dcb122.png">
+  <img width="200" src="https://user-images.githubusercontent.com/22620301/80441623-3d74c400-8946-11ea-9533-523e93fcb4d7.png">
+  <img width="200" src="https://user-images.githubusercontent.com/22620301/80441627-3ea5f100-8946-11ea-9407-21d4229dec77.png">
+ </div>
+ 
+ * RandomForest Classifier
+ <div>
+  <img width="200" src="https://user-images.githubusercontent.com/22620301/80441629-3f3e8780-8946-11ea-8be8-ad9fb09d177a.png">
+  <img width="200" src="https://user-images.githubusercontent.com/22620301/80441632-3fd71e00-8946-11ea-92d1-cafc17139f4b.png">
+  <img width="200" src="https://user-images.githubusercontent.com/22620301/80441636-406fb480-8946-11ea-815b-067851286658.png">
+  <img width="200" src="https://user-images.githubusercontent.com/22620301/80441640-41a0e180-8946-11ea-932c-50024a0a1791.png">
+ </div>
+ 
  ### 결론
  ---
  * 1주차 기준 기준 가장 비중이 높은 가중요소 : 감독, 배우, 배급사, 휴일
  
  * 4주차 기준 가장 비중이 높은 가중요소로 : 주차별 관람객 , 감독, 배우, 배급사
  
- * 스크린의 배분은 이전 주차의 실적과 함께 배우 나 감독의 인기도가 중요한것으로 
+ * 스크린의 배분은 이전 주차의 실적과 함께 배우 나 감독의 인기도가 중요한것으로 판단될수 있으며 첫주차에는 감독의 지명도와 휴일 같은 요소들을 고려해서 배분하는것이 중요해 
 
- 
+
+#### 번외(장르만 따로 머신러닝)
+---
+* 장르(RandomForest)
+<div>
+  <img width="200" src="https://user-images.githubusercontent.com/22620301/80441631-3f3e8780-8946-11ea-8825-ff0102ec0d4d.png">
+  <img width="200" src="https://user-images.githubusercontent.com/22620301/80441634-3fd71e00-8946-11ea-8fe1-d94cdd006562.png">
+  <img width="200" src="https://user-images.githubusercontent.com/22620301/80441637-41084b00-8946-11ea-9e09-63e728b56642.png">
+  <img width="200" src="https://user-images.githubusercontent.com/22620301/80441642-42397800-8946-11ea-8b06-c51fcba11253.png">
+</div>
+
+장르 만을 가지고 머신러닝을 돌려보았을때는 정확도가 낮아지나 액션장르의 경우 데이터의 갯수가 2~3위에 불가하나
+영향력이 큰것으로 보아서 액션영화의 인기가 높다고 판단될수도 있다.
   
